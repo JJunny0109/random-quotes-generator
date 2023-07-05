@@ -8,8 +8,36 @@ const quotes = [
     author : `Unknown`,
   },
   {
-    quote : ``,
-    author : ``,
+    quote : `No amount of experimentation can ever prove me right; a single experiment can prove me wrong`,
+    author : `Albert Einstein`,
+  },
+  {
+    quote : `Rockets are cool. There's no getting around that`,
+    author : `Elon Musk`,
+  },
+  {
+    quote : `Research is what I'm doing when I don't know what I'm doing`,
+    author : `Wernher von Braun`,
+  },
+  {
+    quote : `I seem to have been only like a boy playing on the seashore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me`,
+    author : `Isaac Newton`,
+  },
+  {
+    quote : `Somewhere, something incredible is waiting to be known`,
+    author : `Carl Sagan`,
+  },
+  {
+    quote : `There may be babblers, wholly ignorant of mathematics, who dare to condemn my hypothesis, upon the authority of some part of the Bible twisted to suit their purpose. I value them not, and scorn their unfounded judgement`,
+    author : `Nicholas Copernicus`,
+  },
+  {
+    quote : `The saddest aspect of life right now is that it gathers knowledge faster than society gathers wisdom`,
+    author : `Isaac Asimov`,
+  },
+  {
+    quote : `You cannot teach a man anything, you can only help him discover it in himself`,
+    author : `Galileo Galilei`,
   },
 ]
 //명언과 명언을 한 사람을 하나의 object로 만들고 이를 배열로 저장하였다.
@@ -38,8 +66,8 @@ function generateQuotes(){
   let quotes = getQuotes()
   let quote = quotes.quote
   let author = quotes.author
-  quoteArea.innerHTML = quote;
-  authorArea.innerHTML = author;
+  quoteArea.innerHTML = `" ${quote} "`;
+  authorArea.innerHTML = `- ${author}`;
 }
 //명언을 랜덤으로 불러와서 이를 HTML에 입력하는 함수
 
