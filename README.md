@@ -1,5 +1,5 @@
 # random-quotes-generator
-Press a button to generate quotes randomly
+Day 06 - Press a button to generate quotes randomly
 
 - Use object to handle data easily
 - Needed to add animations and make quote symbols bigger
